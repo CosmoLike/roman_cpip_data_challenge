@@ -1,14 +1,24 @@
-Data challenge 1 for 3x2pt
+# Data challenge for 3x2pt (Real Space)
 
-Contains:
-- Covariance matrx (2055x2055)
-- Data vector (2055)
+## Each Directory Contains:
+- Covariance matrix (cocoa input format)
+- Covariance matrix (fully-indexed)
+- Redshift distribution
+- Data vector
+- Additional information on specific scenario
 
-Relevant general details:
-8 tomographic bins
-theta_min = 2.5, theta_max = 250., ntheta=15
+## Relevant general details:
+  - 8 tomographic bins
+  - theta_min = 2.5, theta_max = 250., ntheta=15
 
-Covariance matrix details:
-For ggl, exclude bin combos where the z_min(lens bin) > z_max(source bin), i.e. where lens is fully behind source. This results in the exclusion of bin combos (l,s) = [(5,0),(6,0),(6,1),(7,0),(7,1),(7,2),(7,3)]. These have already been excluded in the provided matrix and data vector.
+## Data vector format
 
-The matrix, as is, is not positive definite. To make the matrix positive definite, you must remove the first two theta bins from each section of the galaxy-galaxy lensing and galaxy-clustering components. This corresponds roughly to a galaxy clustering cutoff of 1.5 Mpc/h. (Using the actual 1.5Mpc/h cut will lead to the removal of a few additional theta bins cut at low redshift.)
+Each data vector contains two columns:
+  - column 0: index i;
+  - column 1: value of data vector for corresponding probe/bin combination
+
+The data vectors are ordered with the first block corresponding to xi+, followed by xi-, gammat, w
+
+Within each probe block, the first data point corresponds to the lowest theta bin in the first redshift combination, proceeding through all theta bins before moving to the next bin combination. The full ordering can be found within the fully indexed matrix, which follows the format of the [CosmoCov](https://github.com/CosmoLike/CosmoCov/tree/master) output files. 
+
+For galaxy-galaxy lensing, bin combinations where z_min(lens bin) > z_max(source bin), i.e. where lens is fully behind source, have been excluded from both the data vector and the covariance matrix. Details on which bin combinations this impacts can be found within the directory for that example.
