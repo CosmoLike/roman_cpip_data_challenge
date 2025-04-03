@@ -25,7 +25,7 @@ The data vectors are ordered with the first block corresponding to E-mode cosmic
 
 ## Covariance matrix details:
 
-For ggl, exclude bin combos where the z_min(lens bin) > z_max(source bin), i.e. where lens is fully behind source. This results in the exclusion of bin combos (l,s) = [(4,0),(5,0),(5,1),(6,0),(6,1),(6,2),(7,0),(7,1),(7,2),(7,3)]. These have already been excluded in the provided matrix and data vector.
+For ggl, exclude bin combos where the z_min(lens bin) > z_max(source bin), i.e. where lens is fully behind source. This results in the exclusion of bin combos (l,s) = [(4,0),(5,0),(6,0),(6,1),(6,2),(7,0),(7,1),(7,2),(7,3)]. These have already been excluded in the provided matrix and data vector.
 
 The matrix, as is, is not positive definite. To make the matrix positive definite, you must remove the last two ell bins from each section of the galaxy-galaxy lensing and galaxy-clustering components (see challenge3.defaultmask)
 
