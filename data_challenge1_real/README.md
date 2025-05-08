@@ -30,7 +30,7 @@ For galaxy-galaxy lensing, we exclude bin combos where the z_min(lens bin) > z_m
 
 ## Default mask:
 
-The matrix, as given, is not positive definite. To make the matrix positive definite, you must remove the first two theta bins from each section of the galaxy-galaxy lensing and galaxy-clustering components. This can be done by masking out the corresponding points. The default mask provided applies just this cut.
+The matrix, as given, is not positive definite. To make the matrix positive definite, you must make a cut on small-theta scales for galaxy-galaxy lensing and galaxy-clustering components. We find that a galaxy clustering cut at scales of 1.5 Mpc/h is sufficient for this purpose. Using the default mask provided will automatically apply this cut by masking out the corresponding points.
 
 ## Redshift distribution:
 
