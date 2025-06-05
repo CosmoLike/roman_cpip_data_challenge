@@ -4,10 +4,11 @@
 
 - 8 tomography bins
 - Logarithmic Fourier ell bins: ell_min = 30, ell_max = 4000, Ncl=15
-- Covariance matrix (1485x1485)
-  - survey area: 5000 square degrees
-  - n_eff: 50.0 per square arcmin
-- Data vector (1485)
+- Covariance matrix (1590x1590)
+  - survey strategy: medium tier
+  - survey area: 2415.0 square degrees (YJH)
+  - n_eff: 41.3 per square arcmin
+- Data vector (1590)
 
 ## Data vector format
 
@@ -27,7 +28,7 @@ The data vectors are ordered with the first block corresponding to E-mode cosmic
 
 ## Covariance matrix details:
 
-For ggl, exclude bin combos where the z_min(lens bin) > z_max(source bin), i.e. where lens is fully behind source. This results in the exclusion of bin combos (l,s) = [(4,0),(5,0),(6,0),(6,1),(6,2),(7,0),(7,1),(7,2),(7,3)]. These have already been excluded in the provided matrix and data vector.
+For ggl, exclude bin combos where the ggl efficiency is lower than 1.0e-20. This results in the exclusion of bin combos (l,s) = [(7,0),(7,1)]. These have already been excluded in the provided matrix and data vector.
 
-The matrix, as is, is not positive definite. To make the matrix positive definite, you must remove the last two ell bins from each section of the galaxy-galaxy lensing and galaxy-clustering components (see dc1.mask)
+The matrix, as is, is not positive definite. To make the matrix positive definite, you can remove the last one ell bin from each section of the galaxy-galaxy lensing components (see dc1.mask)
 
