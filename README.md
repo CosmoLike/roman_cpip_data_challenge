@@ -6,8 +6,13 @@ The main goals of this first data challenge are:
 - Publish paper documenting the challenge and exploring the impact of systematics on Roman baseline constraints 
 
 
+## Instructions:
+- Download the latest version of cocoa
+- Use the Roman_real and Roman_fourier project repositories for your analysis
+- Use the data vectors, covariances, redshift information that are in the "data_challenge1_fourier_medium" and "data_challenge1_real_medium" respectively
+- Enter your results into a table similar to the file "results.tex"
+- Submit your results via email to timeifler@arizona.edu
 
-## Only use the ...medium folders
 
 ## Each Directory Contains:
 - Covariance matrix
