@@ -1,0 +1,10 @@
+data_file = n40.modelvector
+cov_file = n40_cov
+mask_file = n40_default.mask
+nz_lens_file = n40.nz
+nz_source_file = n40.nz
+lens_ntomo = 8
+source_ntomo = 8
+n_theta = 15
+theta_min_arcmin = 2.5
+theta_max_arcmin = 250.
