@@ -7,8 +7,7 @@ The main goals of this first data challenge are:
 
 
 
-
-
+## Only use the ...medium folders
 
 ## Each Directory Contains:
 - Covariance matrix
