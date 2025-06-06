@@ -1,0 +1,12 @@
+data_file = challenge1.modelvector
+cov_file = cov_dc1
+mask_file = dc1.mask
+nz_lens_file = challenge1.nz
+nz_source_file = challenge1.nz
+lens_ntomo = 8
+source_ntomo = 8
+n_cl = 15
+l_min = 30
+l_max = 4000
+l_max_shear = 4000
+# baryon_pca_file = build_your_own_pca_file
