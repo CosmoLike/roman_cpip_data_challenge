@@ -10,7 +10,7 @@ The main goals of this first data challenge are:
 - Download the latest version of cocoa
 - Use the Roman_real and Roman_fourier project repositories for your analysis
 - Use the data vectors, covariances, redshift information that are in the "data_challenge1_fourier_medium" and "data_challenge1_real_medium" respectively
-- Enter your results into a table similar to the file "results.tex"
+- Enter your results into a table similar to the file "YOURTEAMNAME_results.tex"
 - Submit your results via email to timeifler_at_arizona.edu
 
 
