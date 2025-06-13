@@ -231,94 +231,33 @@ params:
       scale: 0.01
     proposal: 0.01
     latex: b_\mathrm{1-roman}^8
+
+  ###### FORCE LENS=SOURCE IN PHOTO-Z
   roman_DZ_L1:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.001414
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S1: roman_DZ_S1'
     latex: \Delta z_\mathrm{l,roman}^1
   roman_DZ_L2:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.004298
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S2: roman_DZ_S2'
     latex: \Delta z_\mathrm{l,roman}^2
   roman_DZ_L3:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: -0.002162
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S3: roman_DZ_S3'
     latex: \Delta z_\mathrm{l,roman}^3
   roman_DZ_L4:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.000047
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S4: roman_DZ_S4'
     latex: \Delta z_\mathrm{l,roman}^4
   roman_DZ_L5:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.003450
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S5: roman_DZ_S5'
     latex: \Delta z_\mathrm{l,roman}^5
   roman_DZ_L6:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.002860
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S6: roman_DZ_S6'
     latex: \Delta z_\mathrm{l,roman}^6
   roman_DZ_L7:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: 0.002578
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S7: roman_DZ_S7'
     latex: \Delta z_\mathrm{l,roman}^7
   roman_DZ_L8:
-    prior:
-      dist: norm
-      loc: 0.0
-      scale: 0.005
-    ref:
-      dist: norm
-      loc: -0.001002
-      scale: 0.002
-    proposal: 0.002
+    value: 'lambda roman_DZ_S8: roman_DZ_S8'
     latex: \Delta z_\mathrm{l,roman}^8
+  ### SOURCE SAMPLE PHOTO-Z
   roman_DZ_S1:
     prior:
       dist: norm
@@ -580,8 +519,6 @@ sampler:
         [
           roman_DZ_S1, roman_DZ_S2, roman_DZ_S3, roman_DZ_S4, 
           roman_DZ_S5, roman_DZ_S6, roman_DZ_S7, roman_DZ_S8,
-          roman_DZ_L1, roman_DZ_L2, roman_DZ_L3, roman_DZ_L4, 
-          roman_DZ_L5, roman_DZ_L6, roman_DZ_L7, roman_DZ_L8,
           roman_B1_1, roman_B1_2, roman_B1_3, roman_B1_4,
           roman_B1_5, roman_B1_6, roman_B1_7, roman_B1_8,
           roman_A1_1, roman_A1_2,
