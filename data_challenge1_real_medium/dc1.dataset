@@ -1,8 +1,8 @@
-data_file = n40.modelvector
-cov_file = n40_cov
-mask_file = n40_default.mask
-nz_lens_file = n40.nz
-nz_source_file = n40.nz
+data_file = challenge1.modelvector
+cov_file = cov_dc1
+mask_file = dc1.mask
+nz_lens_file = challenge1.nz
+nz_source_file = challenge1.nz
 lens_ntomo = 8
 source_ntomo = 8
 n_theta = 15

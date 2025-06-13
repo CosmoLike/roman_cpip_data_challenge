@@ -5,7 +5,7 @@ stop_at_error: False
 likelihood:
   roman_real.roman_real_3x2pt: #name of likelihood depends on your project name
     path: ./external_modules/data/roman_real #replace roman_real with the name of your directory if different
-    data_file: roman_dc1.dataset 
+    data_file: dc1.dataset 
     accuracyboost: 1.0
     integration_accuracy: 0
     kmax_boltzmann: 5.0
